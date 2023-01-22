@@ -11,6 +11,7 @@ import { useSelector } from "react-redux";
 
 const Payment = () => {
   const Razorpay = useRazorpay();
+  const navigate = useNavigate();
 
   const handlePayment = useCallback(async () => {
     const order = {
@@ -33,7 +34,7 @@ const Payment = () => {
           text: "Your order has been placed!",
           icon: "success",
         });
-        // navigate("/");
+        navigate("/");
       },
       prefill: {
         name: "John Doe",
@@ -95,7 +96,7 @@ const Payment = () => {
             </li>
             {/* </span> */}
           </div>
-          <button id="myBtn">Show More</button>
+          {/* <button id="myBtn">Show More</button> */}
         </div>
       </div>
       <div className="right">

@@ -4,10 +4,9 @@ import Summary from "./Summary";
 
 const Address = () => {
   const [showAdd, setShowAdd] = useState(false);
-  console.log(showAdd);
   return (
     <div className="main">
-      {/* <div className="left">
+      <div className="left">
         <div className="container">
           <h3>CONTACT DETAILS</h3>
           <input type="text" placeholder="Name*" />
@@ -23,10 +22,12 @@ const Address = () => {
             <button>Kolkata</button>
             <button>WEST BENGAL</button>
           </div>
-          <button className="address-btn">ADD ADDRESS</button>
+          <button style={{ width: "90%" }} className="address-btn">
+            ADD ADDRESS
+          </button>
         </div>
-      </div> */}
-      <div className="left">
+      </div>
+      {/* <div className="left">
         <div className="div-1">
           <h1>Select Delivery Address</h1>
           <button onClick={() => setShowAdd(!showAdd)}>ADD NEW ADDRESS</button>
@@ -48,29 +49,29 @@ const Address = () => {
         <div className="div-3" onClick={() => setShowAdd(!showAdd)}>
           <h1>+ Add New Address</h1>
         </div>
-        {showAdd && (
-          <div className="modal1">
-            <div className="content1">
-              <div className="div-4">
-                <p>ADD NEW ADDRESS</p>
-                <span className="close1" onClick={() => setShowAdd(!showAdd)}>
-                  &times;
-                </span>
-              </div>
-              <h3>CONTACT DETAILS</h3>
-              <input type="text" placeholder="Name*" />
-              <input type="number" placeholder="Mobile No*" />
-              <h3>ADDRESS</h3>
-              <input type="number" placeholder="Pin Code" />
-              <input
-                type="number"
-                placeholder="Address (House No, Building, Street, Area)*"
-              />
-              <button className="address-btn">ADD ADDRESS</button>
+      </div> */}
+      {showAdd && (
+        <div className="modal1">
+          <div className="content1">
+            <div className="div-4">
+              <p>ADD NEW ADDRESS</p>
+              <span className="close1" onClick={() => setShowAdd(!showAdd)}>
+                &times;
+              </span>
             </div>
+            <h3>CONTACT DETAILS</h3>
+            <input type="text" placeholder="Name*" />
+            <input type="number" placeholder="Mobile No*" />
+            <h3>ADDRESS</h3>
+            <input type="number" placeholder="Pin Code" />
+            <input
+              type="number"
+              placeholder="Address (House No, Building, Street, Area)*"
+            />
+            <button className="address-btn">ADD ADDRESS</button>
           </div>
-        )}
-      </div>
+        </div>
+      )}
       <div className="right">
         <Summary />
         <button>CONTINUE</button>

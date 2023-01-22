@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./cart.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Summary from "./Summary";
+import { TabPanel } from "@chakra-ui/tabs";
 
 const Bag = () => {
   const [showModal, setShowModal] = useState(false);
