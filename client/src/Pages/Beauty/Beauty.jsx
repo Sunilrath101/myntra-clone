@@ -176,10 +176,7 @@ const Beauty = () => {
 
   return (
     <>
-      {/* <AdminNavbar /> */}
-      {/* <MainNavbar /> */}
-
-      <Box width={"97%"} pt={"50px"} gap="2px" m={"auto"} bg="white">
+      <Box width={"97%"} gap="2px" m={"auto"} bg="white">
         <Box p="10px" textAlign={"start"}>
           <Text color="black">Home/ Personal Care</Text>
         </Box>
@@ -191,48 +188,48 @@ const Beauty = () => {
 
         <hr style={{ paddingBottom: "40px" }} />
         {/* ------------------------------ */}
-        <Flex>
+        <Box display={"flex"}>
           <Box w="22%" p="1">
             <Text color={"black"} as="b">
               FILTERS
             </Text>
             <Stack p="5px" pt={5} pb={5}>
               <hr />
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="radio"
                   value="Men"
                   checked={val === "Men"}
                   onChange={(e) => setVal(e.target.value)}
                 />
-                <Text>Men</Text>
+                <Text fontSize={"14px"}>Men</Text>
               </HStack>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="radio"
                   value="Women"
                   checked={val === "Women"}
                   onChange={(e) => setVal(e.target.value)}
                 />
-                <Text>Women</Text>
+                <Text fontSize={"14px"}>Women</Text>
               </HStack>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="radio"
                   value="Boys"
                   checked={val === "Boys"}
                   onChange={(e) => setVal(e.target.value)}
                 />
-                <Text>Boys</Text>
+                <Text fontSize={"14px"}>Boys</Text>
               </HStack>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="radio"
                   value="Girls"
                   checked={val === "Girls"}
                   onChange={(e) => setVal(e.target.value)}
                 />
-                <Text>Girls</Text>
+                <Text fontSize={"14px"}>Girls</Text>
               </HStack>
             </Stack>
             {/* =========================== */}
@@ -246,7 +243,7 @@ const Beauty = () => {
             </Text>
 
             <Stack pl={1} mt={1} spacing={1}>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="checkbox"
                   onChange={(e) => setVal2(e.target.value)}
@@ -254,9 +251,9 @@ const Beauty = () => {
                   checked={val2 === "Lipstick"}
                 />
 
-                <Text> Lipstick</Text>
+                <Text fontSize={"14px"}> Lipstick</Text>
               </HStack>
-              <HStack>
+              <HStack width={"30%"}>
                 <input
                   type="checkbox"
                   checked={val2 === "Nail Polish"}
@@ -264,9 +261,9 @@ const Beauty = () => {
                   value="Nail Polish"
                 />
 
-                <Text> Nail Polish</Text>
+                <Text fontSize={"14px"}> Nail Polish</Text>
               </HStack>
-              <HStack>
+              <HStack width={"30%"}>
                 <input
                   type="checkbox"
                   checked={val2 === "Perfume and Body Mist"}
@@ -274,9 +271,9 @@ const Beauty = () => {
                   value="Perfume and Body Mist"
                 />
 
-                <Text> Perfume and Body Mist</Text>
+                <Text fontSize={"14px"}> Perfume and Body Mist</Text>
               </HStack>
-              <HStack>
+              <HStack width={"30%"}>
                 <input
                   type="checkbox"
                   checked={val2 === "Beauty Accessory"}
@@ -284,9 +281,9 @@ const Beauty = () => {
                   value="Beauty Accessory"
                 />
 
-                <Text>Beauty Accessory</Text>
+                <Text fontSize={"14px"}>Beauty Accessory</Text>
               </HStack>
-              <HStack>
+              <HStack width={"30%"}>
                 <input
                   type="checkbox"
                   checked={val2 === "Body Wash and Scrub"}
@@ -294,9 +291,9 @@ const Beauty = () => {
                   value="Body Wash and Scrub"
                 />
 
-                <Text> Body Wash and Scrub</Text>
+                <Text fontSize={"14px"}> Body Wash and Scrub</Text>
               </HStack>
-              <HStack>
+              <HStack width={"30%"}>
                 <input
                   type="checkbox"
                   checked={val2 === "Body Oil"}
@@ -304,9 +301,9 @@ const Beauty = () => {
                   value="Body Oil"
                 />
 
-                <Text> Body Oil</Text>
+                <Text fontSize={"14px"}> Body Oil</Text>
               </HStack>
-              <HStack>
+              <HStack width={"30%"}>
                 <input
                   type="checkbox"
                   checked={val2 === "Shampoo and Conditioner"}
@@ -314,9 +311,9 @@ const Beauty = () => {
                   value="Shampoo and Conditioner"
                 />
 
-                <Text> Shampoo and Conditioner</Text>
+                <Text fontSize={"14px"}> Shampoo and Conditioner</Text>
               </HStack>
-              <HStack>
+              <HStack width={"30%"}>
                 <input
                   type="checkbox"
                   checked={val2 === "Face Wash and Cleanser"}
@@ -324,9 +321,10 @@ const Beauty = () => {
                   value="Face Wash and Cleanser"
                 />
 
-                <Text>Face Wash and Cleanser</Text>
+                <Text fontSize={"14px"}>Face Wash and Cleanser</Text>
               </HStack>
             </Stack>
+
             {/* =========================== */}
             <hr style={{ paddingTop: "5px", paddingBottom: "5px" }} />
             <Text color={"black"} as="b" p={"5px"} pb={5}>
@@ -334,7 +332,7 @@ const Beauty = () => {
             </Text>
 
             <Stack pl={1} mt={1} spacing={1}>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="checkbox"
                   checked={val3 === "White"}
@@ -342,9 +340,9 @@ const Beauty = () => {
                   value="White"
                 />
 
-                <Text> White</Text>
+                <Text fontSize={"14px"}> White</Text>
               </HStack>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="checkbox"
                   checked={val3 === "Black"}
@@ -352,9 +350,9 @@ const Beauty = () => {
                   value="Black"
                 />
 
-                <Text> Black</Text>
+                <Text fontSize={"14px"}> Black</Text>
               </HStack>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="checkbox"
                   checked={val3 === "Pink"}
@@ -362,9 +360,9 @@ const Beauty = () => {
                   value="Pink"
                 />
 
-                <Text> Pink</Text>
+                <Text fontSize={"14px"}> Pink</Text>
               </HStack>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="checkbox"
                   checked={val3 === "Multi"}
@@ -372,9 +370,9 @@ const Beauty = () => {
                   value="Multi"
                 />
 
-                <Text>Multi</Text>
+                <Text fontSize={"14px"}>Multi</Text>
               </HStack>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="checkbox"
                   checked={val3 === "Brown"}
@@ -382,9 +380,9 @@ const Beauty = () => {
                   value="Brown"
                 />
 
-                <Text> Brown</Text>
+                <Text fontSize={"14px"}> Brown</Text>
               </HStack>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="checkbox"
                   checked={val3 === "Green"}
@@ -392,9 +390,9 @@ const Beauty = () => {
                   value="Green"
                 />
 
-                <Text> Green</Text>
+                <Text fontSize={"14px"}> Green</Text>
               </HStack>
-              <HStack>
+              <HStack width={"20%"}>
                 <input
                   type="checkbox"
                   checked={val3 === "Red"}
@@ -402,7 +400,7 @@ const Beauty = () => {
                   value="Red"
                 />
 
-                <Text> Red</Text>
+                <Text fontSize={"14px"}> Red</Text>
               </HStack>
             </Stack>
             {/* ------------- */}
@@ -453,9 +451,9 @@ const Beauty = () => {
                                   <Box
                                     h="13.5rem"
                                     overflow="hidden"
-                                    onClick={() =>
-                                      handleClick(e._id, e.product)
-                                    }
+                                    // onClick={() =>
+                                    //   handleClick(e._id, e.product)
+                                    // }
                                   >
                                     {/* <CrousalBox data={product} CrouselBox={CrouselBox} /> */}
                                     <Image src={e.image} />
@@ -463,30 +461,28 @@ const Beauty = () => {
                                   <Box p="15px" pt={["34px", "20px", "20px"]}>
                                     <Box pb="18px" mb="40px">
                                       <Grid gap="1">
+                                        <Text textAlign={"start"}>
+                                          <Text as="b" color="black">
+                                            {e.brand}
+                                          </Text>
+                                          <Text color="black" fontSize={13}>
+                                            {e.product}
+                                          </Text>
+                                        </Text>
+                                        <Text color="black">
+                                          {" "}
+                                          <Flex gap="3">
+                                            <Box w="25px" mt="3px">
+                                              {e.rating ? <BsStar /> : ""}
+                                            </Box>
+                                            <Text fontSize={"14px"}>
+                                              {e.rating} {e.separator}{" "}
+                                              {e.ratingCount}
+                                            </Text>
+                                          </Flex>
+                                        </Text>
                                         {Hover ? (
-                                          <>
-                                            <Text textAlign={"start"}>
-                                              <Text as="b" color="black">
-                                                {e.brand}
-                                              </Text>
-                                              <Text color="black" fontSize={13}>
-                                                {e.product}
-                                              </Text>
-                                            </Text>
-
-                                            <Text color="black">
-                                              {" "}
-                                              <Flex gap="3">
-                                                <Box w="25px" mt="3px">
-                                                  <BsStar />
-                                                </Box>
-                                                <Text>
-                                                  {e.rating} {e.separator}{" "}
-                                                  {e.ratingCount}
-                                                </Text>
-                                              </Flex>
-                                            </Text>
-                                          </>
+                                          <></>
                                         ) : (
                                           <>
                                             <Button
@@ -510,11 +506,14 @@ const Beauty = () => {
                                                     item
                                                   );
                                                 }}
+                                               
                                               >
-                                                WISHLIST
+                                                Add to cart
                                               </Text>
                                             </Button>
-                                            <Text>Size:- {e.size}</Text>
+                                            <Text fontSize={"14px"}>
+                                              Size:- {e.size}
+                                            </Text>
                                           </>
                                         )}
                                         <SimpleGrid columns={3} spacing={[0]}>
@@ -523,7 +522,9 @@ const Beauty = () => {
                                             textAlign={"start"}
                                           >
                                             <Text as="b" color="black">
-                                              {e.discountedPrice}
+                                              {e.discountedPrice
+                                                ? `Rs. ${e.discountedPrice}`
+                                                : ""}
                                             </Text>
                                           </Text>
                                           <Text
@@ -531,7 +532,7 @@ const Beauty = () => {
                                             color="black"
                                             as="del"
                                           >
-                                            {e.strike}
+                                            {e.strike ? `Rs. ${e.strike}` : ""}
                                           </Text>
                                           <Text
                                             fontSize={["sm", "sm", "sm"]}
@@ -555,19 +556,20 @@ const Beauty = () => {
               </Flex>
             </Flex>
           </Box>
-        </Flex>
+        </Box>
+      </Box>
 
-        <Container mt={10}>
-          <Pagination current={page} onChange={onChange} total={5000} />
-        </Container>
+      <Container mt={10}>
+        <Pagination current={page} onChange={onChange} total={5000} />
+      </Container>
 
-        {/* <HStack>
+      {/* <HStack>
             
           <Button onClick={() => setPage(page - 1)}>PREV</Button>
           <Button>{page}</Button>
           <Button onClick={() => setPage(page + 1)}>NEXT</Button>
         </HStack> */}
-      </Box>
+
       {/* <Footer /> */}
     </>
   );
